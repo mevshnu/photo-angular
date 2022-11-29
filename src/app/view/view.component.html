@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div *ngFor="let i of data" class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+
+                    <div class="card mb-4" >
+                        <img src="{{i.url}}" class="card-img-top" alt="..." >
+                        <div  style="height: 200px;" class="card-body">
+                          <h5 class="card-title">{{i.albumId}}</h5>
+                          <p class="card-text">{{i.title}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{i.id}}</li>
+                  
+                        </ul>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
